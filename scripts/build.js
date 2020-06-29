@@ -25,7 +25,7 @@ function buildDistFile(filename) {
         })
         .then(resolve)
         .catch(error => {
-          console.log(error)
+          throw new Error(error);
           reject()
         })
     })
